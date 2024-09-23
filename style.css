@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    width: 85%;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Loader */
+#loader {
+    font-size: 18px;
+    color: #007BFF;
+}
+
+/* Error message styling */
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Background change based on weather */
+.sunny {
+    background-image: url('sunny-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.rainy {
+    background-image: url('rainy-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cloudy {
+    background-image: url('cloudy-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .weather-app {
+        width: 100%;
+    }
+}
